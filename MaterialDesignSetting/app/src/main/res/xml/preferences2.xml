@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_general_settings" android:key="pref_key_general_settings">
+        <Preference android:title="@string/pref_general_note_color_title" android:key="pref_key_note_color" android:summary="@string/pref_general_note_color_summary" android:defaultValue="1" />
+        <Preference android:title="@string/pref_general_font_title" android:key="pref_key_font_style" android:summary="@string/pref_general_font_summary" android:defaultValue="1" />
+        <ListPreference android:entries="@array/list_font_size" android:title="@string/pref_general_font_size_title" android:key="pref_key_font_size" android:summary="@string/pref_general_font_size_summary" android:defaultValue="2" android:entryValues="@array/list_font_size_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_appearance_settings" android:key="pref_key_appearance">
+        <CheckBoxPreference android:title="@string/pref_grid_animation_title" android:key="pref_key_grid_animation" android:summary="@string/pref_grid_animation_summary" android:defaultValue="true" />
+        <ListPreference android:entries="@array/list_animation" android:title="@string/pref_animation_type_title" android:key="pref_key_animation_type" android:summary="@string/pref_animation_type_summary" android:dependency="pref_key_grid_animation" android:defaultValue="1" android:entryValues="@array/list_animation_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_trash_settings" android:key="pref_key_trash_settings">
+        <CheckBoxPreference android:title="@string/pref_delete_old_note_title" android:key="pref_key_delete_trash_notes" android:summary="@string/pref_delete_old_note_summary" android:defaultValue="true" />
+        <ListPreference android:entries="@array/list_note_limit" android:title="@string/pref_delete_old_note_limit_title" android:key="pref_key_trash_notes_limit" android:summary="@string/pref_delete_old_note_limit_summary" android:dependency="pref_key_delete_trash_notes" android:defaultValue="500" android:entryValues="@array/list_note_limit_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_security_settings" android:key="pref_key_security_settings">
+        <Preference android:title="@string/pref_create_password_title" android:key="pref_key_set_change_password" android:summary="@string/pref_create_password_summary" android:defaultValue="111" />
+        <Preference android:enabled="false" android:title="@string/pref_clear_password_title" android:key="pref_key_clear_password" android:summary="@string/pref_clear_password_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_backup_settings" android:key="pref_key_backup_settings">
+        <Preference android:title="@string/pref_backup_location_title" android:key="pref_key_backup_location" android:summary="@string/pref_backup_location_summary" />
+        <CheckBoxPreference android:title="@string/pref_include_trash_note_title" android:key="pref_key_include_trash_notes" android:summary="@string/pref_include_trash_note_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_restore_settings" android:key="pref_key_restore_settings">
+        <CheckBoxPreference android:title="@string/pref_delete_existing_notes_title" android:key="pref_key_delete_all_existing_notes" android:summary="@string/pref_delete_existing_notes_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_overwrite_existing_notes_title" android:key="pref_key_overwrite_existing_notes" android:summary="@string/pref_overwrite_existing_notes_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_about" android:key="pref_key_about">
+        <Preference android:title="@string/pref_about_title" android:key="pref_key_about_title" android:summary="@string/pref_about_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

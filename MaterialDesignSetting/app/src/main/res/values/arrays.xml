@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_items">
+        <item>Notepad</item>
+        <item>Notes</item>
+        <item>Notebooks</item>
+        <item>Reminders</item>
+        <item>Archive</item>
+        <item>Trash</item>
+        <item>BACKUP &amp; IMPORT</item>
+        <item>Backup Notes</item>
+        <item>Import Notes</item>
+        <item>SETTINGS &amp; OTHERS</item>
+        <item>Settings</item>
+        <item>Rate Us</item>
+        <item>About Notepad</item>
+    </string-array>
+    <string-array name="list_animation">
+        <item>Fade</item>
+        <item>Wave</item>
+        <item>Randomize</item>
+    </string-array>
+    <string-array name="list_animation_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="list_note_limit">
+        <item>50 notes</item>
+        <item>100 notes</item>
+        <item>200 notes</item>
+        <item>500 notes</item>
+        <item>1000 notes</item>
+        <item>2000 notes</item>
+        <item>5000 notes</item>
+    </string-array>
+    <string-array name="list_note_limit_values">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="list_font_size">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="list_font_size_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="note_sort_order">
+        <item>Alphabetically</item>
+        <item>By created time</item>
+        <item>By modified time</item>
+        <item>By note color</item>
+    </string-array>
+    <string-array name="note_sort_order_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
